@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        /* Add your custom styles here */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: black;
+        }
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<h2>Main Page</h2>
+
+<div>
+    <form action="/main" method="get">
+        <label for="filter">Filter:</label>
+        <input type="text" id="filter" name="filter" value="{{ .Filter }}">
+
+        <label for="sort">Sort:</label>
+        <select id="sort" name="sort">
+            <option value="name_asc" {{ if eq .Sort "name_asc" }}selected{{ end }}>Name (Ascending)</option>
+            <option value="name_desc" {{ if eq .Sort "name_desc" }}selected{{ end }}>Name (Descending)</option>
+            <option value="price_asc" {{ if eq .Sort "price_asc" }}selected{{ end }}>Price (Ascending)</option>
+            <option value="price_desc" {{ if eq .Sort "price_desc" }}selected{{ end }}>Price (Descending)</option>
+        </select>
+
+        <button type="submit">Apply</button>
+    </form>
+</div>
+
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{ range .Products }}
+        <tr>
+            <td>{{ .Name }}</td>
+            <td>{{ .Price }}</td>
+        </tr>
+        {{ end }}
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        <a href="?page={{ .PrevPage }}">Previous</a>
+        <a href="?page=1" class="{{ if eq .Page 1 }}active{{ end }}">1</a>
+        <a href="?page=2" class="{{ if eq .Page 2 }}active{{ end }}">2</a>
+        <!-- Add more pages dynamically based on your requirements -->
+        <a href="?page={{ .NextPage }}">Next</a>
+    </div>
+</div>
+</body>
+</html>

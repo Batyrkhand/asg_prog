@@ -1,0 +1,9 @@
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-02-29T22:27:34+06:00"}
+{"level":"info","msg":"Attempting login for email:dzhansatov00@gmail.com","time":"2024-02-29T22:27:41+06:00"}
+{"level":"info","msg":"Received product data - Name: Banana, Price: 12.24\n","time":"2024-02-29T22:31:59+06:00"}
+{"level":"info","msg":"Product created successfully: {{24 2024-02-29 22:31:59.0612267 +0600 +06 2024-02-29 22:31:59.0612267 +0600 +06 {0001-01-01 00:00:00 +0000 UTC false}} Banana 12.24}","time":"2024-02-29T22:31:59+06:00"}
+{"level":"info","msg":"Attempting login for email:yerdossov01@gmail.com","time":"2024-02-29T22:34:07+06:00"}
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-02-29T22:38:17+06:00"}
+{"level":"info","msg":"Attempting login for email:dzhansatov00@gmail.com","time":"2024-02-29T22:38:24+06:00"}
+{"level":"info","msg":"Received product data - Name: Apple, Price: 111\n","time":"2024-02-29T22:44:10+06:00"}
+{"level":"info","msg":"Product created successfully: {{25 2024-02-29 22:44:10.022426 +0600 +06 2024-02-29 22:44:10.022426 +0600 +06 {0001-01-01 00:00:00 +0000 UTC false}} Apple 111}","time":"2024-02-29T22:44:10+06:00"}

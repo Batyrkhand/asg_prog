@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+<h1>Admin Panel</h1>
+
+<h2>Create User</h2>
+<form action="/create" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <input type="submit" value="Create User">
+</form>
+
+
+<h2>Edit User</h2>
+<form action="/update?action=user" method="post">
+    <label for="userIdUpdate">User ID:</label>
+    <input type="text" id="userIdUpdate" name="userIdUpdate" required><br>
+    <label for="newName">New Name:</label>
+    <input type="text" id="newName" name="newName"><br>
+    <label for="newEmail">New Email:</label>
+    <input type="email" id="newEmail" name="newEmail"><br>
+    <input type="submit" value="Update User">
+</form>
+
+<h2>Delete User</h2>
+<form action="/delete?action=user" method="post">
+    <label for="userIdDelete">User ID:</label>
+    <input type="text" id="userIdDelete" name="userIdDelete" required><br>
+    <input type="submit" value="Delete User">
+</form>
+
+<h2>Create Product</h2>
+<form action="/create1" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" required><br>
+    <input type="submit" value="Create Product">
+</form>
+
+<h2>Edit Product</h2>
+<form action="/update?action=product" method="post">
+    <label for="productIdUpdate">Product ID:</label>
+    <input type="text" id="productIdUpdate" name="productIdUpdate" required><br>
+    <label for="newName">New Name:</label>
+    <input type="text" id="newName" name="newName"><br>
+    <label for="newPrice">New Price:</label>
+    <input type="text" id="newPrice" name="newPrice"><br>
+    <input type="submit" value="Update Product">
+</form>
+
+<h2>Delete Product</h2>
+<form action="/delete1" method="post">
+    <label for="productIdDelete">Product ID:</label>
+    <input type="text" id="productIdDelete" name="productIdDelete" required><br>
+    <input type="submit" value="Delete Product">
+</form>
+</body>
+
+</html>
