@@ -7,3 +7,14 @@
 {"level":"info","msg":"Attempting login for email:dzhansatov00@gmail.com","time":"2024-02-29T22:38:24+06:00"}
 {"level":"info","msg":"Received product data - Name: Apple, Price: 111\n","time":"2024-02-29T22:44:10+06:00"}
 {"level":"info","msg":"Product created successfully: {{25 2024-02-29 22:44:10.022426 +0600 +06 2024-02-29 22:44:10.022426 +0600 +06 {0001-01-01 00:00:00 +0000 UTC false}} Apple 111}","time":"2024-02-29T22:44:10+06:00"}
+{"level":"fatal","msg":"Failed to connect to database:failed to connect to `host=localhost user=postgres database=postgres`: dial error (dial tcp 127.0.0.1:3000: connectex: No connection could be made because the target machine actively refused it.)","time":"2024-03-01T22:08:51+05:00"}
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-03-01T22:16:44+05:00"}
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-03-01T22:17:47+05:00"}
+{"level":"info","msg":"Attempting login for email:bigxan1@mail.ru","time":"2024-03-01T22:18:14+05:00"}
+{"level":"info","msg":"Attempting login for email:bigxan1@mail.ru","time":"2024-03-01T22:18:41+05:00"}
+{"level":"error","msg":"Failed to send confirmation email:gomail: could not send email 1: gomail: invalid address \"\": mail: no address","time":"2024-03-01T22:20:54+05:00"}
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-03-01T22:20:54+05:00"}
+{"level":"error","msg":"Failed to send confirmation email:gomail: could not send email 1: gomail: invalid address \"\": mail: no address","time":"2024-03-01T22:21:08+05:00"}
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-03-01T22:21:08+05:00"}
+{"level":"error","msg":"Failed to send confirmation email:gomail: could not send email 1: gomail: invalid address \"\": mail: no address","time":"2024-03-01T22:21:21+05:00"}
+{"level":"warning","msg":"Rate limit exceeded","time":"2024-03-01T22:21:21+05:00"}
